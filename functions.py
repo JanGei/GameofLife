@@ -7,6 +7,8 @@ def initial_state(num_rows, num_cols, cond = 'random'):
     if cond == 'random':
         state_matrix = np.random.rand(num_rows, num_cols)
         state_matrix = (state_matrix > 0.5).astype(int)
+    elif cond == 'glider':
+        pass
         
     return state_matrix
 
